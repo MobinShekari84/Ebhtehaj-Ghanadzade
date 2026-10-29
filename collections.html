@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COLLECTIONS | EBTEHAJ GHANADZADEH</title>
+  <meta name="description" content="Fine art photography series and staged collections by Ebtehaj Ghanadzadeh.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    
+    <!-- Global Header -->
+    <header class="site-header">
+      <h1 class="artist-title"><a href="index.html">EBTEHAJ GHANADZADEH</a></h1>
+      <span class="photography-badge">PHOTOGRAPHY</span>
+    </header>
+
+    <!-- Global Layout -->
+    <div class="site-layout">
+      
+      <!-- Left Sidebar Navigation with Active Collections Submenu -->
+      <nav class="sidebar" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="biography.html" class="nav-link">BIOGRAPHY</a></li>
+          <li class="nav-item"><a href="exhibitions.html" class="nav-link">EXHIBITIONS</a></li>
+          <li class="nav-item">
+            <a href="collections.html" class="nav-link active">COLLECTIONS</a>
+            <!-- Indented Collections Submenu (Photos 2 & 3) -->
+            <ul class="submenu-collections" aria-label="Collections Submenu">
+              <li class="submenu-item">
+                <a href="#the-incident-that-never-happened" class="submenu-link" data-collection="the-incident-that-never-happened">THE INCIDENT THAT NEVER NEVER HAPPENED</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#what-if-you-pause" class="submenu-link active" data-collection="what-if-you-pause">WHAT IF YOU PAUSE</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#expectancy" class="submenu-link" data-collection="expectancy">EXPENTANCY</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#quarter-past-twelve" class="submenu-link" data-collection="quarter-past-twelve">QUARTER PAST TWELVE</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#we-wont-reach-tehran" class="submenu-link" data-collection="we-wont-reach-tehran">WE WON'T REACH TEHRAN</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+
+        <div class="sidebar-social">
+          <a href="https://instagram.com/ebtehaj.ghanadzadeh" target="_blank" rel="noopener" class="instagram-btn" aria-label="Instagram">
+            <svg class="instagram-svg" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Collections Stage: 1:1 Square Carousel with Left and Right Arrows -->
+      <main class="content-area">
+        <section class="collections-stage">
+          <div class="carousel-deck">
+            
+            <!-- Left Arrow Button -->
+            <button id="btn-prev-photo" class="nav-arrow prev-arrow" aria-label="Previous photograph">
+              <svg class="arrow-icon" viewBox="0 0 24 24">
+                <polygon points="18,4 6,12 18,20" />
+              </svg>
+            </button>
+
+            <!-- 1:1 Square Photo Frame -->
+            <div class="photo-box-square">
+              <img id="collection-current-photo" class="collection-photo-img" src="" alt="Collection Photo" />
+              <div id="collection-counter-tag" class="photo-counter-tag">1 / 4</div>
+            </div>
+
+            <!-- Right Arrow Button -->
+            <button id="btn-next-photo" class="nav-arrow next-arrow" aria-label="Next photograph">
+              <svg class="arrow-icon" viewBox="0 0 24 24">
+                <polygon points="6,4 18,12 6,20" />
+              </svg>
+            </button>
+
+          </div>
+
+          <!-- Collection Metadata Info -->
+          <div class="collection-meta-info">
+            <div id="active-collection-title" class="current-collection-title">WHAT IF YOU PAUSE</div>
+            <div id="active-photo-caption" class="current-photo-caption">Loading photograph...</div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

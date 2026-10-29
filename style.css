@@ -1,0 +1,567 @@
+/* ==========================================================================
+   EBTEHAJ GHANADZADEH — MINIMALIST PHOTOGRAPHY PORTFOLIO
+   Design System & Gallery Stylesheet
+   ========================================================================== */
+
+:root {
+  --bg-color: #FFFFFF;
+  --text-primary: #000000;
+  --text-muted: #999999;
+  --text-subtle: #777777;
+  --badge-bg: #000000;
+  --badge-text: #FFFFFF;
+  --box-bg: #EAEAEA;
+  --box-border: #DCDCDC;
+  --font-mono: 'Space Mono', 'JetBrains Mono', 'Courier New', Courier, monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --sidebar-width: 270px;
+  --transition-speed: 0.25s;
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  padding: 48px 56px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Master Container */
+.site-wrapper {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* Header Area */
+.site-header {
+  margin-bottom: 52px;
+}
+
+.artist-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.artist-title a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.photography-badge {
+  display: inline-block;
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 3px 6px;
+  border-radius: 0;
+  vertical-align: top;
+}
+
+/* Main Layout Grid */
+.site-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  column-gap: 64px;
+  align-items: start;
+}
+
+/* Left Sidebar Navigation */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 12px;
+}
+
+.nav-link {
+  display: inline-block;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: color var(--transition-speed) ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-primary);
+}
+
+/* Indented Collections Submenu */
+.submenu-collections {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  padding-left: 18px;
+}
+
+.submenu-item {
+  margin-bottom: 9px;
+}
+
+.submenu-link {
+  display: block;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  transition: color var(--transition-speed) ease;
+}
+
+.submenu-link:hover,
+.submenu-link.active {
+  color: var(--text-primary);
+}
+
+/* Social Icons */
+.sidebar-social {
+  margin-top: 32px;
+}
+
+.instagram-btn {
+  display: inline-block;
+  color: var(--text-primary);
+  transition: opacity var(--transition-speed) ease;
+  line-height: 0;
+}
+
+.instagram-btn:hover {
+  opacity: 0.5;
+}
+
+.instagram-svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Main Content Area */
+.content-area {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ==========================================================================
+   PAGE 1: HOME (Ken Burns 6s Slow Zoom Engine)
+   ========================================================================== */
+.home-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.home-photo-box {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 4 / 3;
+  background-color: var(--box-bg);
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.home-kenburns-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transform: scale(1.0);
+  transition: opacity 0.8s ease-in-out;
+}
+
+.home-kenburns-img.animating {
+  animation: kenBurnsZoom 6s ease-in-out infinite alternate;
+}
+
+.home-caption {
+  margin-top: 14px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+@keyframes kenBurnsZoom {
+  0% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.06);
+  }
+}
+
+/* ==========================================================================
+   PAGE 2: BIOGRAPHY
+   ========================================================================== */
+.biography-wrapper {
+  max-width: 700px;
+}
+
+.bio-headline {
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.bio-paragraph {
+  font-size: 0.84rem;
+  line-height: 1.8;
+  color: #111111;
+  margin-bottom: 22px;
+  letter-spacing: 0.02em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ==========================================================================
+   PAGE 3: EXHIBITIONS
+   ========================================================================== */
+.exhibitions-wrapper {
+  max-width: 840px;
+}
+
+.exhibitions-timeline {
+  list-style: none;
+}
+
+.exhibition-row {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.83rem;
+  line-height: 2.2;
+  letter-spacing: 0.03em;
+  color: #111111;
+}
+
+.ex-year {
+  font-weight: 500;
+  width: 52px;
+  flex-shrink: 0;
+}
+
+.ex-dash {
+  margin: 0 10px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.ex-text {
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   PAGE 4: COLLECTIONS (1:1 Square Carousel)
+   ========================================================================== */
+.collections-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  max-width: 720px;
+  width: 100%;
+}
+
+.nav-arrow {
+  background: none;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-speed) ease, transform 0.15s ease;
+  user-select: none;
+}
+
+.nav-arrow:hover {
+  color: var(--text-primary);
+  transform: scale(1.15);
+}
+
+.nav-arrow:active {
+  transform: scale(0.92);
+}
+
+.arrow-icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+/* 1:1 Square Photo Frame */
+.photo-box-square {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--box-bg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.photo-counter-tag {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-subtle);
+  padding: 2px 7px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  user-select: none;
+}
+
+.collection-meta-info {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.current-collection-title {
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.current-photo-caption {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   PAGE 5: CONTACT
+   ========================================================================== */
+.contact-wrapper {
+  max-width: 580px;
+}
+
+.contact-email-row {
+  margin-bottom: 26px;
+}
+
+.direct-email {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  transition: opacity var(--transition-speed) ease;
+}
+
+.direct-email:hover {
+  opacity: 0.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+
+.messages-textarea-box {
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--box-bg);
+  border: 1px solid var(--box-border);
+  font-family: inherit;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  padding: 16px;
+  color: var(--text-primary);
+  resize: vertical;
+  outline: none;
+  transition: border-color var(--transition-speed) ease, background-color var(--transition-speed) ease;
+  margin-bottom: 16px;
+}
+
+.messages-textarea-box:focus {
+  border-color: var(--text-primary);
+  background-color: #FFFFFF;
+}
+
+.contact-form-footer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-input {
+  flex: 1;
+  background-color: #FAFAFA;
+  border: 1px solid var(--box-border);
+  font-family: inherit;
+  font-size: 0.82rem;
+  padding: 10px 14px;
+  outline: none;
+  color: var(--text-primary);
+  transition: border-color var(--transition-speed) ease;
+}
+
+.contact-input:focus {
+  border-color: var(--text-primary);
+  background-color: #FFFFFF;
+}
+
+.btn-send {
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border: 1px solid var(--text-primary);
+  font-family: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+.btn-send:hover {
+  background-color: #333333;
+}
+
+.form-feedback {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+  min-height: 18px;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT (Mobile & Tablets)
+   ========================================================================== */
+@media (max-width: 900px) {
+  body {
+    padding: 32px 24px;
+  }
+  
+  .site-layout {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+  }
+  
+  .sidebar {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 24px;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
+  
+  .nav-item {
+    margin-bottom: 0;
+  }
+  
+  .submenu-collections {
+    padding-left: 0;
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .sidebar-social {
+    margin-top: 18px;
+  }
+  
+  .carousel-deck {
+    gap: 16px;
+  }
+  
+  .photo-box-square {
+    max-width: 340px;
+  }
+  
+  .exhibition-row {
+    flex-wrap: wrap;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .ex-dash {
+    display: none;
+  }
+  
+  .ex-year {
+    width: 100%;
+    color: var(--text-subtle);
+  }
+}

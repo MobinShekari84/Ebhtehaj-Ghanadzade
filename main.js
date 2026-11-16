@@ -14,18 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
       year: "2008–2010",
       description: "Staged cinematic suites depicting frozen moments of domestic suspense and phantom crises.",
       photos: [
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_01.jpg", caption: "Frame I" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_02.jpg", caption: "Frame II" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_03.jpg", caption: "Frame III" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_04.jpg", caption: "Frame IV" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_05.jpg", caption: "Frame V" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_06.jpg", caption: "Frame VI" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_07.jpg", caption: "Frame VII" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_08.jpg", caption: "Frame VIII" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_09.jpg", caption: "Frame IX" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_10.jpg", caption: "Frame X" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_11.jpg", caption: "Frame XI" },
-        { src: "Albums/The-Incident-That-Never-Happened/Incident_12.jpg", caption: "Frame XII" }
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_01.jpg", caption: "Frame I", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_02.jpg", caption: "Frame II", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_03.jpg", caption: "Frame III", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_04.jpg", caption: "Frame IV", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_05.jpg", caption: "Frame V", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_06.jpg", caption: "Frame VI", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_07.jpg", caption: "Frame VII", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_08.jpg", caption: "Frame VIII", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_09.jpg", caption: "Frame IX", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_10.jpg", caption: "Frame X", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_11.jpg", caption: "Frame XI", size: "30 × 45 cm" },
+        { src: "Albums/The-Incident-That-Never-Happened/Incident_12.jpg", caption: "Frame XII", size: "30 × 45 cm" }
       ]
     },
     "what-if-you-pause": {
@@ -33,15 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
       year: "2011–2012",
       description: "Duo series with Amin Meysami exploring migration without return; medium format analog prints (120×120cm).",
       photos: [
-        { src: "Albums/What-If-You-Pause/Pause_01.jpg", caption: "Pause I" },
-        { src: "Albums/What-If-You-Pause/Pause_02.jpg", caption: "Pause II" },
-        { src: "Albums/What-If-You-Pause/Pause_03.jpg", caption: "Pause III" },
-        { src: "Albums/What-If-You-Pause/Pause_04.jpg", caption: "Pause IV" },
-        { src: "Albums/What-If-You-Pause/Pause_05.jpg", caption: "Pause V" },
-        { src: "Albums/What-If-You-Pause/Pause_06.jpg", caption: "Pause VI" },
-        { src: "Albums/What-If-You-Pause/Pause_07.jpg", caption: "Pause VII" },
-        { src: "Albums/What-If-You-Pause/Pause_08.jpg", caption: "Pause VIII" },
-        { src: "Albums/What-If-You-Pause/Pause_09.jpg", caption: "Pause IX" }
+        { src: "Albums/What-If-You-Pause/Pause_01.jpg", caption: "Pause I", size: "120 × 120 cm" },
+        { src: "Albums/What-If-You-Pause/Pause_02.jpg", caption: "Pause II", size: "120 × 120 cm" },
+        { src: "Albums/What-If-You-Pause/Pause_03.jpg", caption: "Pause III", size: "120 × 120 cm" },
+        { src: "Albums/What-If-You-Pause/Pause_04.jpg", caption: "Pause IV", size: "120 × 120 cm" },
+        { src: "Albums/What-If-You-Pause/Pause_05.jpg", caption: "Pause V", size: "120 × 120 cm" },
+        { src: "Albums/What-If-You-Pause/Pause_06.jpg", caption: "Pause VI", size: "120 × 120 cm" },
+        { src: "Albums/What-If-You-Pause/Pause_07.jpg", caption: "Pause VII", size: "120 × 120 cm" },
+        { src: "Albums/What-If-You-Pause/Pause_08.jpg", caption: "Pause VIII", size: "120 × 120 cm" },
+        { src: "Albums/What-If-You-Pause/Pause_09.jpg", caption: "Pause IX", size: "120 × 120 cm" }
       ]
     },
     "expectancy": {
@@ -49,10 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
       year: "2021",
       description: "Fragile human isolations and quiet anticipation captured during the pandemic period.",
       photos: [
-        { src: "Albums/Expectancy/Expectancy_01.jpg", caption: "Expectancy I" },
-        { src: "Albums/Expectancy/Expectancy_02.jpg", caption: "Expectancy II" },
-        { src: "Albums/Expectancy/Expectancy_03.jpg", caption: "Expectancy III" },
-        { src: "Albums/Expectancy/Expectancy_04.jpg", caption: "Expectancy IV" }
+        { src: "Albums/Expectancy/Expectancy_01.jpg", caption: "Expectancy I", size: "70 × 70 cm" },
+        { src: "Albums/Expectancy/Expectancy_02.jpg", caption: "Expectancy II", size: "70 × 70 cm" },
+        { src: "Albums/Expectancy/Expectancy_03.jpg", caption: "Expectancy III", size: "70 × 70 cm" },
+        { src: "Albums/Expectancy/Expectancy_04.jpg", caption: "Expectancy IV", size: "70 × 70 cm" }
       ]
     },
     "quarter-past-twelve": {
@@ -60,16 +60,16 @@ document.addEventListener("DOMContentLoaded", () => {
       year: "2022",
       description: "A continuous staged panoramic sequence composed of 9 consecutive frames, concluding with the complete panoramic tableau.",
       photos: [
-        { src: "Albums/Quarter-Past-Twelve/Quarter_01.jpg", caption: "12:15 — Frame 1 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_09.jpg", caption: "12:15 — Frame 2 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_02.jpg", caption: "12:15 — Frame 3 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_08.jpg", caption: "12:15 — Frame 4 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_03.jpg", caption: "12:15 — Frame 5 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_05.jpg", caption: "12:15 — Frame 6 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_06.jpg", caption: "12:15 — Frame 7 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_04.jpg", caption: "12:15 — Frame 8 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_07.jpg", caption: "12:15 — Frame 9 (Panoramic Sequence)" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_10_Panorama.jpg", caption: "12:15 — Complete Panorama Tableau" }
+        { src: "Albums/Quarter-Past-Twelve/Quarter_01.jpg", caption: "12:15 — Frame 1 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_09.jpg", caption: "12:15 — Frame 2 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_02.jpg", caption: "12:15 — Frame 3 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_08.jpg", caption: "12:15 — Frame 4 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_03.jpg", caption: "12:15 — Frame 5 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_05.jpg", caption: "12:15 — Frame 6 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_06.jpg", caption: "12:15 — Frame 7 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_04.jpg", caption: "12:15 — Frame 8 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_07.jpg", caption: "12:15 — Frame 9 (Panoramic Sequence)", size: "60 × 54 cm" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_10_Panorama.jpg", caption: "12:15 — Complete Panorama Tableau", size: "60 × 486 cm" }
       ]
     },
     "we-wont-reach-tehran": {
@@ -77,24 +77,24 @@ document.addEventListener("DOMContentLoaded", () => {
       year: "2022–2023",
       description: "An elegiac meditation on departure, utopian phantoms, and collective longing.",
       photos: [
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_01.jpg", caption: "Tehran I" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_02.jpg", caption: "Tehran II" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_03.jpg", caption: "Tehran III" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_04.jpg", caption: "Tehran IV" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_05.jpg", caption: "Tehran V" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_06.jpg", caption: "Tehran VI" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_07.jpg", caption: "Tehran VII" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_08.jpg", caption: "Tehran VIII" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_09.jpg", caption: "Tehran IX" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_10.jpg", caption: "Tehran X" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_11.jpg", caption: "Tehran XI" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_12.jpg", caption: "Tehran XII" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_13.jpg", caption: "Tehran XIII" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_14.jpg", caption: "Tehran XIV" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_15.jpg", caption: "Tehran XV" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_16.jpg", caption: "Tehran XVI" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_17.jpg", caption: "Tehran XVII" },
-        { src: "Albums/We-Wont-Reach-Tehran/Tehran_18.jpg", caption: "Tehran XVIII" }
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_01.jpg", caption: "Tehran I", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_02.jpg", caption: "Tehran II", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_03.jpg", caption: "Tehran III", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_04.jpg", caption: "Tehran IV", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_05.jpg", caption: "Tehran V", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_06.jpg", caption: "Tehran VI", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_07.jpg", caption: "Tehran VII", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_08.jpg", caption: "Tehran VIII", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_09.jpg", caption: "Tehran IX", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_10.jpg", caption: "Tehran X", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_11.jpg", caption: "Tehran XI", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_12.jpg", caption: "Tehran XII", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_13.jpg", caption: "Tehran XIII", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_14.jpg", caption: "Tehran XIV", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_15.jpg", caption: "Tehran XV", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_16.jpg", caption: "Tehran XVI", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_17.jpg", caption: "Tehran XVII", size: "76 × 76 cm" },
+        { src: "Albums/We-Wont-Reach-Tehran/Tehran_18.jpg", caption: "Tehran XVIII", size: "76 × 76 cm" }
       ]
     },
     "the-last-colonels-sonata": {
@@ -102,11 +102,11 @@ document.addEventListener("DOMContentLoaded", () => {
       year: "2026",
       description: "A staged cinematic narrative depicting the last colonel; presenting the master composition followed by 4 detailed perspectives.",
       photos: [
-        { src: "Albums/The-Last-Colonels-Sonata/Sonata_01_Main.jpg", caption: "Master Composition" },
-        { src: "Albums/The-Last-Colonels-Sonata/Sonata_02_Detail.jpg", caption: "Detail I" },
-        { src: "Albums/The-Last-Colonels-Sonata/Sonata_03_Detail.jpg", caption: "Detail II" },
-        { src: "Albums/The-Last-Colonels-Sonata/Sonata_04_Detail.jpg", caption: "Detail III" },
-        { src: "Albums/The-Last-Colonels-Sonata/Sonata_05_Detail.jpg", caption: "Detail IV" }
+        { src: "Albums/The-Last-Colonels-Sonata/Sonata_01_Main.jpg", caption: "Master Composition", size: "140 × 140 cm (Four 70 × 70 cm frames)" },
+        { src: "Albums/The-Last-Colonels-Sonata/Sonata_02_Detail.jpg", caption: "Detail I", size: "70 × 70 cm" },
+        { src: "Albums/The-Last-Colonels-Sonata/Sonata_03_Detail.jpg", caption: "Detail II", size: "70 × 70 cm" },
+        { src: "Albums/The-Last-Colonels-Sonata/Sonata_04_Detail.jpg", caption: "Detail III", size: "70 × 70 cm" },
+        { src: "Albums/The-Last-Colonels-Sonata/Sonata_05_Detail.jpg", caption: "Detail IV", size: "70 × 70 cm" }
       ]
     }
   };
@@ -169,6 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const counterTagEl = document.getElementById("collection-counter-tag");
   const collectionTitleEl = document.getElementById("active-collection-title");
   const photoCaptionEl = document.getElementById("active-photo-caption");
+  const photoSizeEl = document.getElementById("active-photo-size");
   const prevBtn = document.getElementById("btn-prev-photo");
   const nextBtn = document.getElementById("btn-next-photo");
   const submenuLinks = document.querySelectorAll(".submenu-link");
@@ -216,6 +217,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         if (photoCaptionEl) {
           photoCaptionEl.textContent = photoItem.caption;
+        }
+        if (photoSizeEl) {
+          photoSizeEl.textContent = photoItem.size || "";
         }
       }, 150);
     }

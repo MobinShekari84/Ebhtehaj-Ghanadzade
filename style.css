@@ -87,11 +87,11 @@ body {
   display: inline-block;
   background-color: var(--badge-bg);
   color: var(--badge-text);
-  font-size: 0.74rem;
+  font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 3px 7px;
+  padding: 4px 9px;
   border-radius: 0;
   vertical-align: top;
 }
@@ -164,23 +164,29 @@ body {
 
 /* Social Icons */
 .sidebar-social {
-  margin-top: 32px;
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.instagram-btn {
-  display: inline-block;
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: color var(--transition-speed) ease, opacity var(--transition-speed) ease, transform 0.15s ease;
+  line-height: 1;
+}
+
+.social-link:hover {
   color: var(--text-primary);
-  transition: opacity var(--transition-speed) ease;
-  line-height: 0;
+  transform: scale(1.08);
 }
 
-.instagram-btn:hover {
-  opacity: 0.5;
-}
-
-.instagram-svg {
-  width: 20px;
-  height: 20px;
+.social-svg {
+  width: 18px;
+  height: 18px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
@@ -311,7 +317,7 @@ body {
 }
 
 /* ==========================================================================
-   PAGE 4: COLLECTIONS (1:1 Square Carousel)
+   PAGE 4: COLLECTIONS (Fixed Frame Carousel with Stationary Navigation)
    ========================================================================== */
 .collections-stage {
   display: flex;
@@ -319,15 +325,19 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 .carousel-deck {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
-  max-width: 960px;
+  justify-content: space-between;
+  position: relative;
   width: 100%;
+  max-width: 860px;
+  height: 520px; /* Fixed stage height so layout never moves when photos change */
+  margin: 0 auto;
+  gap: 20px;
 }
 
 .nav-arrow {
@@ -335,7 +345,9 @@ body {
   border: none;
   color: #888888;
   cursor: pointer;
-  padding: 12px;
+  width: 44px;
+  height: 44px;
+  padding: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,47 +371,51 @@ body {
   fill: currentColor;
 }
 
-/* Seamless Photo Frame (Borderless & Transparent for natural non-square & square aspect ratios) */
+/* Seamless Photo Frame Stage */
 .photo-box-square {
-  position: relative;
-  display: inline-flex;
+  flex: 1;
+  height: 100%;
+  max-width: calc(100% - 96px);
+  display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  position: relative;
+  overflow: hidden;
   background-color: transparent;
   border: none;
-  overflow: visible;
   line-height: 0;
 }
 
 .collection-photo-img {
   max-width: 100%;
-  max-height: 520px;
+  max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
   display: block;
-  transition: opacity 0.3s ease;
+  margin: 0 auto;
+  transition: opacity 0.25s ease;
+}
+
+/* Metadata Block: Located below the photo with counter and physical size */
+.collection-meta-info {
+  margin-top: 22px;
+  text-align: center;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .photo-counter-tag {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  background: rgba(255, 255, 255, 0.9);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
+  display: inline-block;
+  font-size: 0.84rem;
+  letter-spacing: 0.1em;
   color: var(--text-subtle);
-  padding: 3px 8px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  user-select: none;
+  margin-bottom: 8px;
+  font-weight: 500;
   line-height: 1.2;
-  z-index: 2;
-}
-
-.collection-meta-info {
-  margin-top: 18px;
-  text-align: center;
 }
 
 .current-collection-title {
@@ -415,6 +431,14 @@ body {
   font-size: 0.86rem;
   letter-spacing: 0.04em;
   color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.current-photo-size {
+  font-size: 0.84rem;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+  font-weight: 400;
 }
 
 /* ==========================================================================
@@ -606,27 +630,135 @@ body {
 }
 
 /* ==========================================================================
-   RESPONSIVE LAYOUT (Mobile & Tablets)
+   RESPONSIVE DESIGN SYSTEM (TV / 4K, Laptop, iPad/Tablet, Mobile)
    ========================================================================== */
-@media (max-width: 900px) {
+
+/* 1. Large Displays & 2K / 4K TV Screens */
+@media (min-width: 1800px) {
+  html {
+    font-size: 18px;
+  }
+  
   body {
-    padding: 32px 24px;
+    padding: 64px 80px;
+  }
+  
+  .site-wrapper {
+    max-width: 1700px;
+  }
+  
+  :root {
+    --sidebar-width: 340px;
+  }
+  
+  .site-layout {
+    column-gap: 80px;
+  }
+  
+  .carousel-deck {
+    max-width: 1050px;
+    height: 640px;
+  }
+  
+  .home-photo-box {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 2400px) {
+  html {
+    font-size: 22px;
+  }
+  
+  body {
+    padding: 80px 120px;
+  }
+  
+  .site-wrapper {
+    max-width: 2200px;
+  }
+  
+  :root {
+    --sidebar-width: 420px;
+  }
+  
+  .site-layout {
+    column-gap: 100px;
+  }
+  
+  .carousel-deck {
+    max-width: 1350px;
+    height: 780px;
+  }
+  
+  .home-photo-box {
+    max-width: 1000px;
+  }
+}
+
+/* 2. iPad & Tablet (portrait & landscape) */
+@media (max-width: 1024px) {
+  body {
+    padding: 36px 30px;
+  }
+  
+  :root {
+    --sidebar-width: 240px;
+  }
+  
+  .site-layout {
+    column-gap: 40px;
+  }
+  
+  .carousel-deck {
+    max-width: 100%;
+    height: 440px;
+    gap: 16px;
+  }
+  
+  .home-photo-box {
+    max-width: 520px;
+  }
+  
+  .order-input {
+    max-width: 100%;
+  }
+}
+
+/* 3. Mobile Phones (<= 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 24px 18px;
+  }
+  
+  .site-header {
+    margin-bottom: 24px;
+  }
+  
+  .artist-title {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+  }
+  
+  .photography-badge {
+    font-size: 0.78rem;
+    padding: 3px 8px;
   }
   
   .site-layout {
     grid-template-columns: 1fr;
-    row-gap: 36px;
+    row-gap: 30px;
   }
   
   .sidebar {
-    border-bottom: 1px solid #EEEEEE;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 20px;
   }
   
   .nav-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 24px;
+    gap: 12px 20px;
   }
   
   .nav-item {
@@ -634,30 +766,58 @@ body {
   }
   
   .submenu-collections {
-    padding-left: 0;
-    margin-top: 12px;
     width: 100%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+    border-left: 2px solid #EAEAEA;
   }
   
   .sidebar-social {
     margin-top: 18px;
-  }
-  
-  .carousel-deck {
     gap: 16px;
   }
   
+  .social-svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .content-area {
+    min-height: auto;
+  }
+  
+  .carousel-deck {
+    height: 330px;
+    gap: 10px;
+  }
+  
   .photo-box-square {
-    max-width: 340px;
+    max-width: calc(100% - 76px);
+  }
+  
+  .nav-arrow {
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+  }
+  
+  .arrow-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .home-photo-box {
+    max-width: 100%;
   }
   
   .exhibition-row {
     flex-wrap: wrap;
     line-height: 1.6;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
   
   .ex-dash {
@@ -667,5 +827,74 @@ body {
   .ex-year {
     width: 100%;
     color: var(--text-subtle);
+    margin-bottom: 2px;
+  }
+  
+  .contact-form-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .contact-input,
+  .order-input,
+  .messages-textarea-box {
+    font-size: 16px; /* Prevents auto-zoom on iOS */
+    max-width: 100%;
+  }
+  
+  .btn-send,
+  .btn-order-submit {
+    width: 100%;
+    padding: 12px 18px;
+    text-align: center;
+  }
+}
+
+/* 4. Small Mobile (< 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 18px 14px;
+  }
+  
+  .artist-title {
+    font-size: 1.12rem;
+  }
+  
+  .carousel-deck {
+    height: 280px;
+    gap: 6px;
+  }
+  
+  .photo-box-square {
+    max-width: calc(100% - 64px);
+  }
+  
+  .nav-arrow {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+  }
+  
+  .arrow-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .collection-meta-info {
+    margin-top: 16px;
+    min-height: 80px;
+  }
+  
+  .current-collection-title {
+    font-size: 0.88rem;
+  }
+  
+  .current-photo-caption {
+    font-size: 0.82rem;
+  }
+  
+  .current-photo-size {
+    font-size: 0.80rem;
   }
 }

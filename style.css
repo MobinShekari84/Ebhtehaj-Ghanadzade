@@ -118,6 +118,10 @@ body {
   margin-bottom: 12px;
 }
 
+.nav-item:last-child {
+  margin-bottom: 0;
+}
+
 .nav-link {
   display: inline-block;
   color: var(--text-muted);
@@ -162,9 +166,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Social Icons */
+/* Social Icons (Spacing equal to nav-item margin-bottom for perfect vertical rhythm) */
 .sidebar-social {
-  margin-top: 26px;
+  margin-top: 12px;
   display: flex;
   align-items: center;
   gap: 15px;

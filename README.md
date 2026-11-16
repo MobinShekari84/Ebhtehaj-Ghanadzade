@@ -42,9 +42,11 @@ docs/
 3. **صفحه ۳: نمایشگاه‌ها (Exhibitions)**:
    - آرشیو کامل زمانی ۲۰۰۹ تا ۲۰۲۵ به همراه اسامی گالری‌ها در تهران، میلان، دبی و میامی.
 4. **صفحه ۴: مجموعه‌ها (Collections)**:
-   - زیرمنوی اختصاصی برای ۵ مجموعه شاخص (*The Incident That Never Happened*, *What If You Pause*, *Expectancy*, *Quarter Past Twelve*, *We Won't Reach Tehran*).
-   - کادر عکس مربعی با تناسب دقیق `1:1` و کلیدهای ناوبری چپ و راست.
-5. **صفحه ۵: تماس (Contact)**:
+   - زیرمنوی اختصاصی برای ۶ مجموعه شاخص (*The Incident That Never Happened*, *What If You Pause*, *Expectancy*, *Quarter Past Twelve*, *We Won't Reach Tehran*, *The Last Colonels Sonata*).
+   - کادر عکس با نسبت دقیق `1:1` و کلیدهای ناوبری چپ و راست.
+5. **صفحه ۵: سفارش چاپ (Print Order)**:
+   - فرم اختصاصی استعلام و ثبت سفارش چاپ آثار هنری (*Which Photograph Whould You Wish To Print / From Which Collection / Please Leave Your Phone No.*).
+6. **صفحه ۶: تماس (Contact)**:
    - ایمیل اختصاصی `info@ebtehajphotography.com`.
    - فیلد متنی `messages:` برای ارسال پیام سریع.
    - آیکون اینستاگرام لینک‌شده به حساب کاربری هنرمند.

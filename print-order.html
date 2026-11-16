@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRINT ORDER | EBTEHAJ GHANADZADEH</title>
+  <meta name="description" content="Inquire and order fine art photographic prints by Ebtehaj Ghanadzadeh.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    
+    <!-- Global Header -->
+    <header class="site-header">
+      <h1 class="artist-title"><a href="index.html">EBTEHAJ GHANADZADEH</a></h1>
+      <span class="photography-badge">PHOTOGRAPHY</span>
+    </header>
+
+    <!-- Global Layout -->
+    <div class="site-layout">
+      
+      <!-- Left Sidebar Navigation -->
+      <nav class="sidebar" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="biography.html" class="nav-link">BIOGRAPHY</a></li>
+          <li class="nav-item"><a href="exhibitions.html" class="nav-link">EXHIBITIONS</a></li>
+          <li class="nav-item"><a href="collections.html" class="nav-link">COLLECTIONS</a></li>
+          <li class="nav-item"><a href="print-order.html" class="nav-link active">PRINT ORDER</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+
+        <div class="sidebar-social">
+          <a href="https://instagram.com/ebtehaj.ghanadzadeh" target="_blank" rel="noopener" class="instagram-btn" aria-label="Instagram">
+            <svg class="instagram-svg" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Print Order Content Area -->
+      <main class="content-area">
+        <section class="order-wrapper">
+          <form id="print-order-form" class="order-form" action="#" method="POST">
+            
+            <div class="order-group">
+              <label for="order-photo" class="order-label">Which Photograph Whould You Wish To Print</label>
+              <input 
+                type="text" 
+                id="order-photo" 
+                name="photograph_name" 
+                class="order-input" 
+                placeholder="e.g. Pause I or Master Composition"
+                required 
+              />
+            </div>
+
+            <div class="order-group">
+              <label for="order-collection" class="order-label">From Which Collection</label>
+              <input 
+                type="text" 
+                id="order-collection" 
+                name="collection_name" 
+                class="order-input" 
+                list="collections-datalist"
+                placeholder="Select or type collection"
+                required 
+              />
+              <datalist id="collections-datalist">
+                <option value="THE INCIDENT THAT NEVER NEVER HAPPENED">
+                <option value="WHAT IF YOU PAUSE">
+                <option value="EXPECTANCY">
+                <option value="QUARTER PAST TWELVE">
+                <option value="WE WON'T REACH TEHRAN">
+                <option value="THE LAST COLONELS SONATA">
+              </datalist>
+            </div>
+
+            <div class="order-group">
+              <label for="order-phone" class="order-label">Please Leave Your Phone No.</label>
+              <input 
+                type="tel" 
+                id="order-phone" 
+                name="phone_number" 
+                class="order-input" 
+                placeholder="+98 ..."
+                required 
+              />
+            </div>
+
+            <div class="order-footer-note">We Will Contact You As Soon As Possible</div>
+
+            <button type="submit" class="btn-order-submit">SUBMIT ORDER</button>
+            <div id="order-feedback" class="order-feedback" role="status"></div>
+
+          </form>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

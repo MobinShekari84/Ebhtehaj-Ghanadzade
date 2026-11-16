@@ -503,6 +503,85 @@ body {
 }
 
 /* ==========================================================================
+   PAGE 6: PRINT ORDER
+   ========================================================================== */
+.order-wrapper {
+  max-width: 620px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-group {
+  margin-bottom: 24px;
+}
+
+.order-label {
+  display: block;
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.order-input {
+  width: 100%;
+  max-width: 540px;
+  height: 38px;
+  background-color: #B5B5B5;
+  border: 1px solid #A0A0A0;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  color: #000000;
+  outline: none;
+  transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+.order-input:focus {
+  background-color: #FFFFFF;
+  border-color: #000000;
+}
+
+.order-footer-note {
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  margin-top: 4px;
+  margin-bottom: 22px;
+  line-height: 1.4;
+}
+
+.btn-order-submit {
+  align-self: flex-start;
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border: 1px solid var(--text-primary);
+  font-family: inherit;
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 11px 28px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease, opacity var(--transition-speed) ease;
+}
+
+.btn-order-submit:hover {
+  background-color: #333333;
+}
+
+.order-feedback {
+  margin-top: 14px;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  color: var(--text-subtle);
+  min-height: 18px;
+}
+
+/* ==========================================================================
    RESPONSIVE LAYOUT (Mobile & Tablets)
    ========================================================================== */
 @media (max-width: 900px) {

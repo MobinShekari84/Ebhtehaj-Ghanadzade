@@ -323,4 +323,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // =========================================================================
+  // 5. PAGE: PRINT ORDER FORM CONTROLLER
+  // =========================================================================
+  const orderForm = document.getElementById("print-order-form");
+  const orderFeedback = document.getElementById("order-feedback");
+
+  if (orderForm) {
+    orderForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const submitBtn = orderForm.querySelector(".btn-order-submit");
+      const originalText = submitBtn.textContent;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "SUBMITTING...";
+      orderFeedback.textContent = "";
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        orderFeedback.textContent = "Thank you. Your print order request has been registered. We will contact you shortly.";
+        orderForm.reset();
+
+        setTimeout(() => {
+          orderFeedback.textContent = "";
+        }, 7000);
+      }, 700);
+    });
+  }
+
 });

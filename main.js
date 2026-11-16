@@ -58,17 +58,18 @@ document.addEventListener("DOMContentLoaded", () => {
     "quarter-past-twelve": {
       title: "QUARTER PAST TWELVE",
       year: "2022",
-      description: "Formal visual investigation into arrested time and fragmented narratives.",
+      description: "A continuous staged panoramic sequence composed of 9 consecutive frames, concluding with the complete panoramic tableau.",
       photos: [
-        { src: "Albums/Quarter-Past-Twelve/Quarter_01.jpg", caption: "12:15 — Sequence 1" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_02.jpg", caption: "12:15 — Sequence 2" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_03.jpg", caption: "12:15 — Sequence 3" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_04.jpg", caption: "12:15 — Sequence 4" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_05.jpg", caption: "12:15 — Sequence 5" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_06.jpg", caption: "12:15 — Sequence 6" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_07.jpg", caption: "12:15 — Sequence 7" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_08.jpg", caption: "12:15 — Sequence 8" },
-        { src: "Albums/Quarter-Past-Twelve/Quarter_09.jpg", caption: "12:15 — Sequence 9" }
+        { src: "Albums/Quarter-Past-Twelve/Quarter_01.jpg", caption: "12:15 — Frame 1 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_09.jpg", caption: "12:15 — Frame 2 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_02.jpg", caption: "12:15 — Frame 3 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_08.jpg", caption: "12:15 — Frame 4 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_03.jpg", caption: "12:15 — Frame 5 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_05.jpg", caption: "12:15 — Frame 6 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_06.jpg", caption: "12:15 — Frame 7 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_04.jpg", caption: "12:15 — Frame 8 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_07.jpg", caption: "12:15 — Frame 9 (Panoramic Sequence)" },
+        { src: "Albums/Quarter-Past-Twelve/Quarter_10_Panorama.jpg", caption: "12:15 — Complete Panorama Tableau" }
       ]
     },
     "we-wont-reach-tehran": {

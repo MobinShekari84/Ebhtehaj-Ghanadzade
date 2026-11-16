@@ -12,7 +12,7 @@ flowchart TD
     Site --> P1["۱. صفحه اصلی (Home) / عکس رندوم و زوم کند ۶ ثانیه‌ای"]
     Site --> P2["۲. بیوگرافی (Biography) / متن کامل زندگینامه و رویکرد هنری"]
     Site --> P3["۳. نمایشگاه‌ها (Exhibitions) / گاه‌شمار رسمی ۲۰۰۹ تا ۲۰۲۵"]
-    Site --> P4["۴. مجموعه‌ها (Collections) / اسلایدر ۱:۱ با زیرمنوی ۵ مجموعه"]
+    Site --> P4["۴. مجموعه‌ها (Collections) / اسلایدر ۱:۱ با زیرمنوی ۶ مجموعه"]
     Site --> P5["۵. تماس (Contact) / ایمیل مستقیم، فرم پیام و لینک اینستاگرام"]
 
     P4 --> C1["The Incident That Never Happened"]
@@ -20,6 +20,7 @@ flowchart TD
     P4 --> C3["Expectancy"]
     P4 --> C4["Quarter Past Twelve"]
     P4 --> C5["We Won't Reach Tehran"]
+    P4 --> C6["The Last Colonels Sonata"]
 ```
 
 ---
@@ -79,6 +80,7 @@ flowchart TD
   - `EXPECTANCY`
   - `QUARTER PAST TWELVE`
   - `WE WON'T REACH TEHRAN`
+  - `THE LAST COLONELS SONATA` (با اولویت نمایش اثر جامع و سپس ۴ دیتیل)
 * **محتوای بصری**:
   - کادر عکس دقیقاً مربعی با نسبت **1:1** (`aspect-ratio: 1 / 1`).
   - کلیدهای جهت‌نما در چپ و راست کادر (`<` و `>`).

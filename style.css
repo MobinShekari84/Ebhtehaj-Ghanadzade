@@ -10,9 +10,9 @@
   --text-subtle: #777777;
   --badge-bg: #000000;
   --badge-text: #FFFFFF;
-  --box-bg: #EAEAEA;
-  --box-border: #DCDCDC;
-  --font-mono: 'Space Mono', 'JetBrains Mono', 'Courier New', Courier, monospace;
+  --box-bg: #F8F8F8;
+  --box-border: #ECECEC;
+  --font-mono: 'Andele Mono', AndeleMono, 'Space Mono', 'JetBrains Mono', 'Courier New', Courier, monospace;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --sidebar-width: 270px;
   --transition-speed: 0.25s;
@@ -26,7 +26,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 15px; /* Increased 1 step per client instruction for enhanced readability */
   background-color: var(--bg-color);
   color: var(--text-primary);
   scroll-behavior: smooth;
@@ -346,9 +346,10 @@ body {
 .photo-box-square {
   position: relative;
   width: 100%;
-  max-width: 460px;
+  max-width: 500px;
   aspect-ratio: 1 / 1;
   background-color: var(--box-bg);
+  border: 1px solid var(--box-border);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -358,7 +359,7 @@ body {
 .collection-photo-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: opacity 0.3s ease;
 }

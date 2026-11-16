@@ -14,7 +14,7 @@
   --box-border: #ECECEC;
   --font-mono: 'Andele Mono', AndeleMono, 'Space Mono', 'JetBrains Mono', 'Courier New', Courier, monospace;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --sidebar-width: 270px;
+  --sidebar-width: 290px;
   --transition-speed: 0.25s;
 }
 
@@ -26,7 +26,7 @@
 }
 
 html {
-  font-size: 15px; /* Increased 1 step per client instruction for enhanced readability */
+  font-size: 15px;
   background-color: var(--bg-color);
   color: var(--text-primary);
   scroll-behavior: smooth;
@@ -44,7 +44,7 @@ body {
 
 /* Master Container */
 .site-wrapper {
-  max-width: 1380px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .artist-title {
-  font-size: 1.25rem;
+  font-size: 1.42rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -71,11 +71,11 @@ body {
   display: inline-block;
   background-color: var(--badge-bg);
   color: var(--badge-text);
-  font-size: 0.65rem;
+  font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 3px 6px;
+  padding: 3px 7px;
   border-radius: 0;
   vertical-align: top;
 }
@@ -106,7 +106,7 @@ body {
   display: inline-block;
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 1.0rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 400;
@@ -134,10 +134,10 @@ body {
   display: block;
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  line-height: 1.4;
+  line-height: 1.45;
   transition: color var(--transition-speed) ease;
 }
 
@@ -217,7 +217,7 @@ body {
 
 .home-caption {
   margin-top: 14px;
-  font-size: 0.72rem;
+  font-size: 0.86rem;
   color: var(--text-muted);
   letter-spacing: 0.06em;
   text-align: center;
@@ -236,21 +236,21 @@ body {
    PAGE 2: BIOGRAPHY
    ========================================================================== */
 .biography-wrapper {
-  max-width: 700px;
+  max-width: 760px;
 }
 
 .bio-headline {
-  font-size: 0.88rem;
+  font-size: 1.06rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: var(--text-primary);
   margin-bottom: 24px;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .bio-paragraph {
-  font-size: 0.84rem;
-  line-height: 1.8;
+  font-size: 1.0rem;
+  line-height: 1.85;
   color: #111111;
   margin-bottom: 22px;
   letter-spacing: 0.02em;
@@ -262,7 +262,7 @@ body {
    PAGE 3: EXHIBITIONS
    ========================================================================== */
 .exhibitions-wrapper {
-  max-width: 840px;
+  max-width: 920px;
 }
 
 .exhibitions-timeline {
@@ -272,15 +272,15 @@ body {
 .exhibition-row {
   display: flex;
   align-items: baseline;
-  font-size: 0.83rem;
-  line-height: 2.2;
+  font-size: 0.98rem;
+  line-height: 2.3;
   letter-spacing: 0.03em;
   color: #111111;
 }
 
 .ex-year {
   font-weight: 500;
-  width: 52px;
+  width: 62px;
   flex-shrink: 0;
 }
 
@@ -369,10 +369,10 @@ body {
   bottom: 10px;
   right: 12px;
   background: rgba(255, 255, 255, 0.85);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   color: var(--text-subtle);
-  padding: 2px 7px;
+  padding: 3px 8px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   user-select: none;
 }
@@ -383,7 +383,7 @@ body {
 }
 
 .current-collection-title {
-  font-size: 0.76rem;
+  font-size: 0.94rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-primary);
@@ -392,7 +392,7 @@ body {
 }
 
 .current-photo-caption {
-  font-size: 0.7rem;
+  font-size: 0.86rem;
   letter-spacing: 0.04em;
   color: var(--text-muted);
 }
@@ -401,7 +401,7 @@ body {
    PAGE 5: CONTACT
    ========================================================================== */
 .contact-wrapper {
-  max-width: 580px;
+  max-width: 620px;
 }
 
 .contact-email-row {
@@ -411,7 +411,7 @@ body {
 .direct-email {
   color: var(--text-primary);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 1.05rem;
   letter-spacing: 0.05em;
   transition: opacity var(--transition-speed) ease;
 }
@@ -426,7 +426,7 @@ body {
 }
 
 .form-label {
-  font-size: 0.82rem;
+  font-size: 0.96rem;
   letter-spacing: 0.06em;
   color: var(--text-primary);
   margin-bottom: 10px;
@@ -439,7 +439,7 @@ body {
   background-color: var(--box-bg);
   border: 1px solid var(--box-border);
   font-family: inherit;
-  font-size: 0.84rem;
+  font-size: 0.98rem;
   line-height: 1.6;
   padding: 16px;
   color: var(--text-primary);
@@ -465,8 +465,8 @@ body {
   background-color: #FAFAFA;
   border: 1px solid var(--box-border);
   font-family: inherit;
-  font-size: 0.82rem;
-  padding: 10px 14px;
+  font-size: 0.95rem;
+  padding: 11px 14px;
   outline: none;
   color: var(--text-primary);
   transition: border-color var(--transition-speed) ease;
@@ -482,10 +482,10 @@ body {
   color: #FFFFFF;
   border: 1px solid var(--text-primary);
   font-family: inherit;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 10px 24px;
+  padding: 11px 26px;
   cursor: pointer;
   transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
@@ -496,7 +496,7 @@ body {
 
 .form-feedback {
   margin-top: 12px;
-  font-size: 0.75rem;
+  font-size: 0.86rem;
   letter-spacing: 0.05em;
   color: var(--text-subtle);
   min-height: 18px;
